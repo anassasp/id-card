@@ -18,7 +18,7 @@ function Customer(name, phone, email, city, date, gender){
 //generate a random image source based on gender (therea re two images for each gender)
 Customer.prototype.generateRandomPic = function(){
     const pic = this.gender === '0'? 'm' + Math.round(Math.random()): 'f' + Math.round(Math.random());
-    return `./images/${pic}.JPG`
+    return `./images/${pic}.jpg`
 }
 
 //generate user id based on city (first character to decimal value), date, and gender
