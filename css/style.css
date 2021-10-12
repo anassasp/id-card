@@ -83,3 +83,12 @@
 .footer-text {
 	padding: 8px;
 }
+
+@media(max-width: 500px){
+    .form-wrapper {
+         Width: 90%;
+    }
+
+    .card-container {
+         Width: 80%;
+}
