@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1 class="title">Identity Card Registration</h1>
+	</header>
+	<main class="main">
+		<div class="form-wrapper">
+			<form onsubmit="submitForm()">
+				<div class="form-container">
+					<label for="name">Fullname</label>
+					<input placeholder="Enter your fullname" class="form-input" id="name" type="text" required>
+				</div>
+				<div class="form-container">
+					<label for="phone">Phone Number</label>
+					<input placeholder="Enter your number (08**********)" class="form-input" id="phone" type="tel" pattern="[0][8][0-9]{9,10}" required>
+				</div>
+				<div class="form-container">
+					<label for="email">Email</label>
+					<input placeholder="Enter your email" class="form-input" id="email" type="email" required>
+				</div>
+				<div class="form-container">
+					<label for="city">City</label>
+					<input placeholder="Enter your city" class="form-input" id="city" type="text" required>
+				</div>
+				<div class="form-container">
+					<label for="birthdate">Date of Birth</label>
+					<input class="form-input" id="birthdate" type="date">
+				</div>
+				<div class="form-container">
+					<label for="gender">Gender</label>
+					<select class="form-input" id="gender" required>
+						<option value="0">Male</option>
+						<option value="1">Female</option>
+					</select>
+				</div>
+				<input class="btn-submit" type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div id="card" class="card-wrapper">
+		</div>
+	</main>
+
+	<footer>
+		<p class="footer-text">All the images I use for the avatar are downloaded from <a href="Vecteezy.com">Vecteezy.com</a></p>
+	</footer>
+
+ 	<script src="./js/index.js"></script>
+	
+</body>
+</html>
